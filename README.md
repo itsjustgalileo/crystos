@@ -40,7 +40,7 @@ void update(void) {
 
 int main(void) {
 	                   // in Hz
-	Clock nesClock = {.frequency = 1798773 }; // try tweaking this
+    Clock nesClock = {.frequency = 1798773 }; // try tweaking this
     while(1) {
 	tick(&nesClock, &update);
 	printf("cycles passed: %llu\n", counter);
